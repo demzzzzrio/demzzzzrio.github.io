@@ -1,0 +1,374 @@
+html {
+  background-image: url(https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/20244/8ba950eb04b5ad5cf6872f6d804c8837.jpg);
+  background-size: 1000px;
+  background-position-x: center;
+}
+
+body {
+  font-size: 15pt;
+  margin: 0px;
+}
+
+header {
+  background-color: black;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+nav img {
+  height: 20px;
+}
+
+div.contents {
+  height: 450px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 64px;
+}
+
+div.contents h3 {
+  color: white;
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: 10px;
+  background-color: #FFA726;
+  padding: 10px 20px;
+  border-radius: 100px 0px;
+}
+
+div.contents img {
+  height: 72px;
+}
+
+div.contents button {
+  background-color: #FFA726;
+  color: white;
+  border: none;
+  border-radius: 100px 0px;
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+div.id {
+  background-color: white;
+  padding: 20px;
+}
+
+div.id h2 {
+  margin: 0px;
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+div.id div {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+
+}
+
+div.id div input {
+  border: solid 3px #FFA726;
+  border-radius: 15px;
+  height: 30px;
+  width: 65vw;
+  padding-left: 10px;
+}
+
+div.id div button {
+  background-color: #FFA726;
+  height: 30px;
+  border: none;
+  border-radius: 13px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: white;
+}
+
+div.id h6 {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+div.spin {
+  background-color: #FFA726;
+  height: auto;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.spin h2 {
+  text-align: center;
+  margin-top: 0px;
+  width: 70vw;
+  color: white;
+}
+
+div.spin div.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+div.spin h1{
+  background-color: white;
+  height: auto;
+  margin: 0px 5px;
+  padding: 10px;
+  font-size: 30vw;
+  border-radius: 5px;
+}
+
+div.spin button {
+  background-color: white;
+  border: none;
+  border-radius: 100px 0px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 2px 20px;
+  margin-top: 50px;
+  max-width: 90vw;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+div.submit {
+  background-color: #202020;
+  padding: 20px 0px;
+  display: grid;
+  place-items: center;
+}
+
+div.submit button {
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer {
+  background-image: url(https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/20244/8ba950eb04b5ad5cf6872f6d804c8837.jpg);
+  background-position-y: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  height: 200px;
+  background-size: cover;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+div.popup {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+  top: 0px;
+  display: none;
+}
+
+div.popup h3 {
+  background-color: #ffa100; 
+  margin: 0px;
+  padding: 10px 20px;
+  height: 40px;
+  border-radius: 10px 10px 0px 0px;
+  color: #ECEFF1;
+  display: flex;
+  align-items: center;
+  font-size: 27px;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+div.popup h6 {
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 15px;
+  font-size: 14px;
+}
+
+
+div.popup div.loginPopup {
+  background-color: #ECEFF1;
+  height: 180px;
+  width: 350px;
+  border: solid;
+  border-radius: 20px;
+  border-color: #ffa100;
+  border-width: 4px;
+}
+
+div.popup div.loginPopup button {
+  background-color: #1778F2;
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+div.popup div.loginPopup button img {
+  height: 21px;
+  margin-left: 10px;
+  border-radius: 2px;
+}
+
+div.popup div.loginPopup button h6 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 17px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.popup div.facebook {
+  height: auto;
+  width: 70vw;
+  background-color: rgb(236, 239, 246);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  display: none;
+  max-width: 350px;
+}
+
+div.popup div.facebook div.navbarFacebook {
+  background-color: #3B5998;
+  padding: 8px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  margin-bottom: 10px;
+  
+}
+
+div.popup div.facebook div.navbarFacebook img {
+  height: 30px;
+}
+
+div.popup div.facebook div.content {
+  text-align: center;
+}
+
+div.popup div.facebook div.content img {
+  height: 60px;
+  border-radius: 5px;
+}
+
+div.popup div.facebook div.content p.top {
+  color: #90949C;
+  margin: 10px 15px 17px;
+}
+
+
+div.popup div.facebook div.content form input {
+  padding: 12px;
+  margin: 0px;
+  height: 15px;
+  width: 287px;
+  border:solid;
+  border-width: 1px;
+  border-color: rgb(189, 190, 191);
+}
+
+div.popup div.facebook div.content form input#email {
+  border-bottom: none;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+div.popup div.facebook div.content form input#pass {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+div.popup div.facebook div.content form button {
+  padding: 10px;
+  background-color: #1778F2;
+  width: 310px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+div.popup div.facebook div.content p.bottom {
+  color: #3B5998;
+  font-size: 14px;
+  margin: 0px;
+  padding: 5px;
+}
+
+div.popup div.facebook div.bottomFacebook {
+  height: 82px;
+}
+
+div.popup div.facebook div.bottomFacebook table {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div.popup div.facebook div.bottomFacebook table tr td {
+  text-align: center;
+  font-size: 12px;
+  width: 131px;
+  height: 18px;
+  color: #3B5998;
+}
+
+div.popup div.facebook div.bottomFacebook table tr td.selected {
+  color: #90949C;
+  font-weight: bold;
+}
+
+div.popup div.facebook div.bottomFacebook table tr td p {
+  border: solid 1px #3B5998;
+  width: 13px;
+  margin: 0px auto 0px;
+}
+
+div.popup div.facebook div.facebookCopyright {
+  height: 41px;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  color: #90949C;
+}

